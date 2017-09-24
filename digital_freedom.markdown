@@ -32,14 +32,13 @@ Security is a very nebulous term, including concepts like financial security, so
 
 It's tempting to call things "secure" or "insecure" and you hear these terms used all the time by media and even by techies. Don't listen to it. In reality security is *always* a gradiant. Something with all the best technology done the best way anyone knows may have a tiny flaw that no-one noticed.
 
-A burgler breaks in to a house via the easiest method. A lock on the window doesn't help if the door is literally left wide open. Alternatively, A solid steel door with a fancy lock doesn't help if it's next to a glass window trivially broken. Similarly we measure a technology's security by it's *weakest* point, not it's
-strongest.
+A burglar breaks in to a house via the easiest method. A lock on the window doesn't help if the door is literally left wide open. Alternatively, A solid steel door with a fancy lock doesn't help if it's next to a glass window trivially broken. Similarly we measure a technology's security by its *weakest* point, not its strongest.
 
-Continuing the analogy most burglers don't come with ladders. There may be a use in using a steel door, even if the upper story windows are unlocked. For this reason we can't just talk about security as a single slider. It depends on who you are trying to keep things secure *from*.
+Continuing the analogy most burglars don't come with ladders. There may be a use in using a steel door, even if the upper storey windows are unlocked. For this reason we can't just talk about security as a single slider. It depends on who you are trying to keep things secure *from*.
 
-This is all important because it's tempting to say "Ugh, everything is insecure". While that's true in a sense, we still lock our doors even though a burgler could use a wrecking ball. Even when we're talking about governments, dramatic measures get expensive, and often give away information a government doesn't want people to know (like that they just smashed up your house).  
+This is all important because it's tempting to say "Ugh, everything is insecure". While that is true in a sense, we still lock our doors even though a burglar could use a wrecking ball. Even when we're talking about governments, dramatic measures get expensive, and often give away information a government doesn't want people to know (like that they just smashed up your house).  
 
-Unfortunately, all this means we can't just say "Do this, it's secure", "don't do this, it's not secure". We have to explain the tradeoffs. So, while we try and keep the explanations as simple as possible, we try and do so without washing out these important details.
+Unfortunately, all this means we can't just say "Do this, it's secure", "don't do this, it's not secure". We have to explain the tradeoffs. So, while we try and keep the explanations as simple as possible, we try and do so without leaving out these important details.
 
 ## Communication Security
 Communication security is made up of 3 components.
@@ -53,16 +52,12 @@ It should be noted that the 3'rd bullet here, though highly desirable, is rarely
 ## Encryption
 We should talk about encryption in a little more detail. 
 
-Not all encryption is created equal and just because something is "encrypted"
-doesn't mean it can never be read by anyone. As a simple example, if I use
-"rot13" to encrypted my email... that is I take ever letter and change it to the
-letter 13 letters further through the alphabet (wrapping around if I run out of
-letters)... while technically encryption, many children could "crack" this and
+Not all encryption is created equal and just because something is "encrypted" doesn't mean it can never be read by anyone. As a simple example, if I use "rot13" to encrypted my email... that is I take ever letter and change it to the letter 13 letters further through the alphabet (wrapping around if I run out of letters)... while technically encryption, many children could "crack" this and
 read the original message.
 
 In practice encryption methods suffer from 2 classes of problem
 
- 1. All can be "cracked" (read by someone besides the person who you intend to read it) with sufficient computational power. As computers get faster, that computational power gets easier to get a hold of. While some encryption may take an amount of computational power functionall impossible to get, most do not, and many older technologies can already be cracked by say... China if they care enough to spend a couple billion on cracking it (say, with 2 days time on their biggest computer).
+ 1. All encryption can be "cracked" (read by someone besides the person who you intend to read it) with sufficient computational power. As computers get faster, that computational power gets easier to get a hold of. While some encryption may take an amount of computational power functionall impossible to get, most do not, and many older technologies can already be cracked by say... China if they care enough to spend a couple billion on cracking it (say, with 2 days time on their biggest computer).
  1. Most encryption technologies don't have any strong theoretical backing. It's often the case that mathematical tricks can significantly reduce the computational power needed. As new computational tricks are discovered
 
 Why are we bringing this up? Because, it's important to realize that no matter what you do, if your conversation is "logged" (stored somewhere) by someone, even if it's encrypted so they can't read it now, some day they may be able to read it. The cost to do so will also constantly drop as computers get faster.
